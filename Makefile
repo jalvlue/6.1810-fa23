@@ -192,6 +192,7 @@ UPROGS=\
 	$U/_pingpong\
 	$U/_primes\
 	$U/_parentexit\
+	$U/_find\
 
 
 
