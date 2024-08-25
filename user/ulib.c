@@ -35,6 +35,19 @@ uint strlen(const char* s) {
   return n;
 }
 
+/**
+ * @brief Sets the first 'n' bytes of the memory pointed to by 'dst' to the
+ * specified value 'c'.
+ *
+ * This function copies the value of 'c' (converted to an unsigned char) into
+ * each of the first 'n' bytes of the object pointed to by 'dst'.
+ *
+ * @param dst Pointer to the memory block to be filled.
+ * @param c Value to be set. The value is passed as an int, but the function
+ * fills the block of memory using the unsigned char conversion of this value.
+ * @param n Number of bytes to be set to the value.
+ * @return Pointer to the memory block 'dst'.
+ */
 void* memset(void* dst, int c, uint n) {
   char* cdst = (char*)dst;
   int i;
@@ -51,6 +64,14 @@ char* strchr(const char* s, char c) {
   return 0;
 }
 
+/**
+ * Reads a line of input from the standard input and stores it in the specified
+ * buffer.
+ *
+ * @param buf The buffer to store the input line.
+ * @param max The maximum number of characters to read.
+ * @return A pointer to the buffer containing the input line.
+ */
 char* gets(char* buf, int max) {
   int i, cc;
   char c;
